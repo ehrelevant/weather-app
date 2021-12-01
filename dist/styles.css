@@ -42,7 +42,7 @@ h1, p {
 .main-info {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .main-info-container {
