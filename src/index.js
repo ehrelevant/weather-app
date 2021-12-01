@@ -15,7 +15,7 @@ async function getWeatherData(location) {
 
     return ret;
   } catch(err) {
-    alert(err);
+    throw err;
   }
 }
 
@@ -42,6 +42,8 @@ const display = (() => {
         feltTemp.textContent = `${feltCelsius}°`;
         humidity.textContent = res['humidity'];
         windSpeed.textContent = res['wind'];
+      }).catch(() => {
+        alert('Location not found!');
       });
   }
 
