@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgb(148, 191, 226);
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+
+    width: 50%;
+    height: 280px;
+    padding: 20px 1%;
+
+    background-color: rgb(201, 225, 248);
+    border-radius: 30px;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: rgb(251, 254, 255);
+    padding: 30px 5%;
+
+    border-radius: 30px;
+}
+
+.misc-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.misc-info-container {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(251, 254, 255);
+    padding: 10px 4%;
+    border-radius: 20px;
+}
+
+.main {
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(22, 22, 31);
+}
+
+.desc {
+    font-size: 1em;
+    color: rgb(75, 100, 121);
+}
+
+.label {
+    font-weight: bold;
+    color: rgb(57, 70, 78);
+}
+
+
+.search-form {
+    margin-top: 20px;
+
+    background-color: rgb(201, 225, 248);
+    height: 50px;
+    width: 40%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 16px;
+}
+
+.search-box {
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    border-bottom: 2px solid rgb(57, 70, 78);
+    height: 20px;
+    width: 75%;
+
+    transition: border-bottom 100ms;
+}
+
+.search-box:hover {
+    border-bottom: 3px solid rgb(57, 70, 78);
+}
+
+.search-box:focus {
+    border-bottom: 3px solid rgb(75, 100, 121);
+}
+
+.search-btn {
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
