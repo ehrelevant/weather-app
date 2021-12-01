@@ -13,31 +13,43 @@
   <link rel="stylesheet" href="./styles.css">
 
   <script defer src="main.js"></script>
+  <script src="https://kit.fontawesome.com/49cfe025a4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <main class="content">
     <div class="weather-container">
-      <h1 id="city" class="city">London</h1>
-      <div class="weather-info">
-        <p id="weather_main" class="main">Cloudy</p>
-        <p id="weather_desc" class="desc">chance of meatballs</p>
-      </div>
-      <div class="temp-info" class="main">
-        <p id="temp_main">40°</p>
+      <h1 id="city" class="main">London</h1>
+      <div class="main-info">
+        <div class="main-info-container">
+          <p id="weather_main" class="main">Cloudy</p>
+          <p id="weather_desc" class="desc">chance of meatballs</p>
+        </div>
+        <div class="main-info-container">
+          <p id="temp_main" class="main">40°</p>
+          <p class="desc">Celsius</p>
+        </div>
       </div>
       <div class="misc-info">
-        <p class="misc-label desc">Felt Temperature</p>
-        <p id="felt_temp" class="desc"></p>
-        <p class="misc-label desc">Humidity</p>
-        <p id="humidity" class="desc"></p>
-        <p class="misc-label desc">Wind Speed</p>
-        <p id="wind_speed" class="desc"></p>
+        <div class="misc-info-container">
+          <p class="label desc">Felt Temperature</p>
+          <p id="felt_temp" class="desc"></p>
+        </div>
+        <div class="misc-info-container">
+          <p class="label desc">Humidity</p>
+          <p id="humidity" class="desc"></p>
+        </div>
+        <div class="misc-info-container">
+          <p class="label desc">Wind Speed</p>
+          <p id="wind_speed" class="desc"></p>
+        </div>
       </div>
     </div>
     <form name="searchForm" class="search-form" onsubmit="return false">
-      <input name="city" type="text" value="London" class="search-box">
-      <button type="submit" class="search-btn">Search</button>
+      <input name="city" type="text" value="London" class="search-box desc">
+      <button type="submit" class="search-btn">
+        <i class="fas fa-search"></i>
+      </button>
     </form>
   </main>
 </body>
